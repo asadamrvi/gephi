@@ -184,9 +184,7 @@
         <!-- Mac OS X signing identity - must match with a verified Apple developer certificate in the keychain -->
         <gephi.codesign.identity>Developer ID Application</gephi.codesign.identity>
         
-        <!-- Repository URLs -->
-        <gephi.ossrh.repository.id>ossrh</gephi.ossrh.repository.id>
-        <gephi.ossrh.repository.url>https://oss.sonatype.org/content/repositories/snapshots</gephi.ossrh.repository.url>
+        
         
         <!-- SCM -->
         <gephi.scm>git</gephi.scm>
@@ -259,24 +257,7 @@
         <maven>${gephi.maven.requiredVersion}</maven>
     </prerequisites>
  
-    <!-- Repositories -->
-    <repositories>
-        <repository>
-            <id>netbeans</id>
-            <name>NetBeans</name>
-            <url>https://bits.netbeans.org/nexus/content/groups/netbeans/</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>gephi-thirdparty</id>
-            <url>https://raw.github.com/gephi/gephi/mvn-thirdparty-repo/</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>  
-    </repositories>
+    
 
     <!-- Locations of the artifacts published -->
     <distributionManagement>
